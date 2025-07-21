@@ -52,13 +52,18 @@
     <img src="https://tattootaxguys.github.io/The-Inkubator/pet_groomer_page_4.png" alt="pet_groomer_page_4.png"/>
 
     <script>
-  const returnUrl = new URLSearchParams(window.location.search).get('return') || 'https://friedmantax.com';
-  function goBackToGallery() {
-    window.location.href = returnUrl;
+  const params = new URLSearchParams(window.location.search);
+  const returnUrl = params.get("return");
+  const backBtn = document.getElementById("backBtn");
+
+  if (returnUrl) {
+    backBtn.href = returnUrl;
+  } else {
+    backBtn.href = "https://friedmantax.com";
   }
 </script>
 
-<button onclick="goBackToGallery()" class="back-link">← Back to Gallery</button>
+<a class="back-link" id="backBtn" href="#">← Back to Gallery</a>
 
   </div>
 </body>
