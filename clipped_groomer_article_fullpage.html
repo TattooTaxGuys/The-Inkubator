@@ -51,7 +51,15 @@
     <img src="https://tattootaxguys.github.io/The-Inkubator/pet_groomer_page_3.png" alt="pet_groomer_page_3.png"/>
     <img src="https://tattootaxguys.github.io/The-Inkubator/pet_groomer_page_4.png" alt="pet_groomer_page_4.png"/>
 
-    <button onclick="window.history.back()" class="back-link">⬅ Back to Previous Page</button>
+    <script>
+  const returnUrl = new URLSearchParams(window.location.search).get('return') || 'https://friedmantax.com';
+  function goBackToGallery() {
+    window.location.href = returnUrl;
+  }
+</script>
+
+<button onclick="goBackToGallery()" class="back-link">← Back to Gallery</button>
+
   </div>
 </body>
 </html>
