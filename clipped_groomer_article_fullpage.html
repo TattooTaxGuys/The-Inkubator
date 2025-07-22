@@ -8,78 +8,80 @@
       background-color: #111;
       color: #fff;
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 20px;
+      margin: 0;
+      padding: 0;
     }
-
     .container {
       max-width: 850px;
-      margin: 0 auto;
-      background-color: #fff;
-      color: #000;
-      border-radius: 12px;
+      margin: 40px auto;
       padding: 30px;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: #222;
-      margin-bottom: 30px;
-    }
-
-    p {
-      text-align: left;
-      line-height: 1.6;
-    }
-
-    .back-button {
-      display: inline-block;
-      background-color: #FFD43B;
+      background-color: #fff;
+      border-radius: 12px;
       color: #000;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    h1 {
+      color: #fff;
+      margin-top: 40px;
+      font-size: 2em;
+    }
+    h2 {
+      color: #fff;
+      font-size: 1.25em;
+      margin-bottom: 20px;
+    }
+    .back-button {
+      display: block;
+      text-align: center;
+      margin: 20px auto;
+    }
+    .back-button a {
+      text-decoration: none;
+      background-color: #FFD700;
+      color: black;
       padding: 10px 20px;
       border-radius: 30px;
       font-weight: bold;
-      text-decoration: none;
-      margin: 30px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
     }
-
-    .article-image {
+    .back-button a:hover {
+      background-color: #e0c200;
+    }
+    .article-body {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .article-body img {
       width: 100%;
-      max-width: 750px;
-      margin: 30px auto;
-      display: block;
+      margin: 30px 0;
       border-radius: 10px;
     }
   </style>
 </head>
 <body>
-
-  <!-- Top Back Button -->
-  <a class="back-button" href="https://friedmantax.com/blogs">← Back to Gallery</a>
+  <div class="back-button">
+    <a href="https://friedmantax.com/blogs">← Back to Gallery</a>
+  </div>
 
   <h1>Clipped & Compliant</h1>
   <h2>Choosing the Right Business Structure for Pet Groomers</h2>
 
   <div class="container">
-    <h3>CLIPPED & COMPLIANT: CHOOSING THE RIGHT BUSINESS STRUCTURE FOR PET GROOMERS</h3>
-
-    <p>Every spring, four longtime friends—Harper, Zoey, Finn, and Layla—meet in Las Vegas for the National Pet Grooming Expo. Between seminars on coat conditioning and the latest in paw balm science, their favorite tradition is an annual dinner where talk inevitably shifts from poodles to profits and taxes.</p>
-
-    <!-- Correct Image Filenames -->
-    <img src="https://github.com/TattooTaxGuys/The-Inkubator/blob/main/pet_groomer_page_1.png?raw=true" alt="pet_groomer_page_1.png" class="article-image">
-    <img src="https://github.com/TattooTaxGuys/The-Inkubator/blob/main/pet_groomer_page_2.png?raw=true" alt="pet_groomer_page_2.png" class="article-image">
-    <img src="https://github.com/TattooTaxGuys/The-Inkubator/blob/main/pet_groomer_page_3.png?raw=true" alt="pet_groomer_page_3.png" class="article-image">
-    <img src="https://github.com/TattooTaxGuys/The-Inkubator/blob/main/pet_groomer_page_4.png?raw=true" alt="pet_groomer_page_4.png" class="article-image">
-
-    <!-- Bottom Back Button -->
-    <a class="back-button" href="https://friedmantax.com/blogs">← Back to Gallery</a>
+    <h2>CLIPPED & COMPLIANT: CHOOSING THE RIGHT BUSINESS STRUCTURE FOR PET GROOMERS</h2>
+    <p class="article-body">
+      Every spring, four longtime friends—Harper, Zoey, Finn, and Layla—meet in Las Vegas for the National Pet Grooming Expo. Between seminars on coat conditioning and the latest in paw balm science, their favorite tradition is an annual dinner where talk inevitably shifts from poodles to profits and taxes.
+    </p>
+    <img src="https://github.com/TattooTaxGuys/The-Inkubator/blob/main/pet_groomer_page_1.png?raw=true" alt="Page 1">
+    <img src="https://github.com/TattooTaxGuys/The-Inkubator/blob/main/pet_groomer_page_2.png?raw=true" alt="Page 2">
+    <img src="https://github.com/TattooTaxGuys/The-Inkubator/blob/main/pet_groomer_page_3.png?raw=true" alt="Page 3">
+    <img src="https://github.com/TattooTaxGuys/The-Inkubator/blob/main/pet_groomer_page_4.png?raw=true" alt="Page 4">
   </div>
 
+  <div class="back-button">
+    <a href="https://friedmantax.com/blogs">← Back to Gallery</a>
+  </div>
 </body>
 </html>
